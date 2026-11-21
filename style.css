@@ -1,0 +1,72 @@
+/* إعدادات الخطوط العامة */
+body {
+    font-family: 'Cairo', sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* تنسيق الواجهة الرئيسية (Hero Section) */
+.hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), 
+                url('https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=1600&q=80');
+    background-size: cover;
+    background-position: center;
+    min-height: 85vh;
+    padding: 80px 0;
+}
+
+.search-box {
+    max-width: 900px;
+    border-radius: 12px;
+}
+
+/* تنسيق عناوين الأقسام */
+.section-title {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    width: 60px;
+    height: 4px;
+    background-color: #ffc107; /* لون Bootstrap Warning */
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 2px;
+}
+
+/* تنسيق بطاقات العقارات */
+.property-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.property-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15) !important;
+}
+
+.property-card img {
+    height: 230px;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.property-card:hover img {
+    transform: scale(1.05);
+}
+
+/* تنسيق مربعات المميزات */
+.feature-box {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    border: 1px solid #eee;
+}
+
+.feature-box:hover {
+    transform: translateY(-5px);
+    background-color: #fffdf5;
+}
